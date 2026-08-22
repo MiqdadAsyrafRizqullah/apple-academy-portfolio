@@ -1,0 +1,166 @@
+/* ============================================================
+   Google Fonts — Inter (body) + Poppins (heading)
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ============================================================
+   Tailwind CSS directives
+   ============================================================ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   CSS Custom Properties — Light Mode
+   All text/background pairs maintain ≥ 4.5:1 contrast ratio
+   ============================================================ */
+:root {
+  /* Primary accent — indigo */
+  --color-primary:       #4f46e5; /* indigo-600 */
+  --color-primary-light: #818cf8; /* indigo-400 */
+  --color-primary-dark:  #3730a3; /* indigo-800 */
+
+  /* Secondary accent — violet */
+  --color-secondary: #7c3aed; /* violet-600 */
+
+  /* Backgrounds */
+  --color-background: #ffffff;
+  --color-surface:    #f9fafb; /* gray-50 */
+
+  /* Text — contrast vs #ffffff background:
+     #111827 (gray-900) → 16.75:1  ✓
+     #374151 (gray-700) →  9.73:1  ✓
+     Both exceed 4.5:1 requirement */
+  --color-text-primary:   #111827; /* gray-900 */
+  --color-text-secondary: #374151; /* gray-700 */
+
+  /* Borders */
+  --color-border: #e5e7eb; /* gray-200 */
+
+  /* Transitions */
+  --transition-default: 0.3s ease;
+  --transition-colors:  color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* ============================================================
+   CSS Custom Properties — Dark Mode
+   Applied when <html class="dark"> is set by useTheme hook
+   ============================================================ */
+.dark {
+  /* Primary accent — lighter for dark backgrounds */
+  --color-primary:       #818cf8; /* indigo-400 */
+  --color-primary-light: #a5b4fc; /* indigo-300 */
+  --color-primary-dark:  #6366f1; /* indigo-500 */
+
+  /* Secondary accent */
+  --color-secondary: #a78bfa; /* violet-400 */
+
+  /* Backgrounds */
+  --color-background: #0f172a; /* slate-900 */
+  --color-surface:    #1e293b; /* slate-800 */
+
+  /* Text — contrast vs #0f172a background:
+     #f1f5f9 (slate-100) → 15.8:1  ✓
+     #cbd5e1 (slate-300) →  8.9:1  ✓
+     Both exceed 4.5:1 requirement */
+  --color-text-primary:   #f1f5f9; /* slate-100 */
+  --color-text-secondary: #cbd5e1; /* slate-300 */
+
+  /* Borders */
+  --color-border: #334155; /* slate-700 */
+}
+
+/* ============================================================
+   Base styles
+   ============================================================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.modal-scroll-lock {
+  scroll-behavior: auto !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  background-color: var(--color-background);
+  transition: var(--transition-colors);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', system-ui, sans-serif;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+}
+
+/* ============================================================
+   Intro loader overlay
+   ============================================================ */
+.intro-overlay {
+  isolation: isolate;
+}
+
+.intro-overlay canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.certificate-swiper .swiper-slide {
+  height: auto;
+}
+
+/* Klik di celah carousel / judul menembus ke section (spawn background) */
+.certificate-section {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.certificate-section-content {
+  pointer-events: none;
+}
+
+.certificate-section .certificate-card,
+.certificate-section .swiper-button-next,
+.certificate-section .swiper-button-prev,
+.certificate-section .swiper-pagination,
+.certificate-section .swiper-pagination-bullet {
+  pointer-events: auto;
+}
+
+/* Teks di kartu tetap bisa disalin jika perlu */
+.certificate-section .certificate-card,
+.certificate-section .certificate-card * {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* ============================================================
+   Respect prefers-reduced-motion
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .intro-overlay canvas {
+    display: none !important;
+  }
+}

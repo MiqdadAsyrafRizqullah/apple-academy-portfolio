@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Miqdad Asyraf Rizqullah</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background: #fff;
+    }
+    
+    /* Reset & Typography */
+    h1, h2, h3, h4 { margin-top: 0; margin-bottom: 10px; color: #111827; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0 0 15px; padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    
+    /* Header */
+    .header {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    .name {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 5px;
+    }
+    .title {
+      font-size: 18px;
+      color: #4f46e5;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    .contact-info {
+      font-size: 14px;
+      color: #4b5563;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .contact-info a {
+      color: #4b5563;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 25px;
+    }
+    .section-title {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #374151;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    /* Content Blocks */
+    .item {
+      margin-bottom: 15px;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+    .item-title {
+      font-weight: 600;
+      font-size: 16px;
+      color: #111827;
+    }
+    .item-subtitle {
+      font-size: 14px;
+      color: #6b7280;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    /* Skills Grid */
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .skill-tag {
+      background: #f3f4f6;
+      color: #374151;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* Print Styles */
+    @media print {
+      body { padding: 0; }
+      .skill-tag { border: 1px solid #d1d5db; background: transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="name">Miqdad Asyraf Rizqullah</div>
+    <div class="title">Mahasiswa Teknik Informatika | Web & Mobile Developer</div>
+    <div class="contact-info">
+      <span>📞 082328238104</span>
+      <span>✉️ <a href="mailto:miqdadwajo@gmail.com">miqdadwajo@gmail.com</a></span>
+      <span>🔗 <a href="https://linkedin.com/in/miqdad-asyraf-rizqullah" target="_blank">LinkedIn</a></span>
+      <span>💻 <a href="https://github.com/MiqdadAsyrafRizqullah" target="_blank">GitHub</a></span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Profil Singkat</div>
+    <p style="font-size: 14px; color: #4b5563; text-align: justify;">
+      Mahasiswa Teknik Informatika di Universitas Halu Oleo yang sangat antusias terhadap pengembangan teknologi informasi, khususnya dalam bidang Web Development, Mobile App Development, UI/UX Design, dan Artificial Intelligence. Berpengalaman dalam membangun aplikasi fungsional yang berfokus pada pengalaman pengguna yang intuitif serta efisiensi operasional sistem.
+    </p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Proyek & Portofolio</div>
+    
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Sistem Informasi Akademik & Promosi Yayasan TK/PAUD</div>
+      </div>
+      <div class="item-subtitle">Full-Stack Developer</div>
+      <ul style="font-size: 14px; color: #4b5563;">
+        <li>Mengembangkan website komprehensif untuk yayasan dan TK/PAUD yang memiliki fitur landing page interaktif untuk media promosi sekolah.</li>
+        <li>Merancang sistem autentikasi (login) berlapis untuk administrator dan staf guru.</li>
+        <li>Mengimplementasikan fitur absensi harian, manajemen daftar data siswa, penjadwalan kelas, serta sistem evaluasi akademik anak.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Aplikasi Pengingat Deadline Terintegrasi Chatbot WA</div>
+      </div>
+      <div class="item-subtitle">Backend Developer & AI Integrator</div>
+      <ul style="font-size: 14px; color: #4b5563;">
+        <li>Membangun aplikasi berbasis web yang berfungsi sebagai pengingat tugas dan deadline mata kuliah bagi mahasiswa.</li>
+        <li>Mengintegrasikan sistem langsung dengan API WhatsApp Chatbot, sehingga notifikasi dan jadwal tugas dapat diterima secara real-time via pesan WhatsApp.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Keahlian (Skills)</div>
+    <div class="skills-container">
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag">CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">TypeScript (TS / TSX)</span>
+      <span class="skill-tag">React.js</span>
+      <span class="skill-tag">Next.js</span>
+      <span class="skill-tag">Vue.js</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Tailwind CSS</span>
+      <span class="skill-tag">Dart</span>
+      <span class="skill-tag">Flutter</span>
+      <span class="skill-tag">React Native</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">Artificial Intelligence</span>
+      <span class="skill-tag">UI/UX Design (Figma)</span>
+      <span class="skill-tag">Mobile App Development</span>
+      <span class="skill-tag">Web Development</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Pendidikan</div>
+    
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">S1 Teknik Informatika</div>
+      </div>
+      <div class="item-subtitle">Universitas Halu Oleo | Kendari</div>
+    </div>
+    
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Ilmu Pengetahuan Alam (MIPA)</div>
+      </div>
+      <div class="item-subtitle">SMA Negeri 2 Baubau</div>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Sekolah Menengah Pertama</div>
+      </div>
+      <div class="item-subtitle">SMP Negeri 2 Baubau</div>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div class="item-title">Sekolah Dasar</div>
+      </div>
+      <div class="item-subtitle">SD Negeri 2 Wajo</div>
+    </div>
+  </div>
+
+</body>
+</html>

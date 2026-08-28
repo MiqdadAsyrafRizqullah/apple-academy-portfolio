@@ -22,7 +22,7 @@ export const certificates: Certificate[] = [
   {
     id: 'cert-miqdad-1',
     name: 'Peserta Talkshow SkillFest 2025',
-    issuer: 'Universitas Haluoleo',
+    issuer: 'Digisaurus.id',
     year: 2025,
     image: '/assets/images/certificates/cert-miqdad-1.png',
     verificationUrl: '',
@@ -31,7 +31,7 @@ export const certificates: Certificate[] = [
   {
     id: 'cert-miqdad-2',
     name: 'Peserta Talkshow elevAIte Indonesia',
-    issuer: 'Universitas Haluoleo',
+    issuer: 'Digisaurus.id',
     year: 2025,
     image: '/assets/images/certificates/cert-miqdad-2.png',
     verificationUrl: '',

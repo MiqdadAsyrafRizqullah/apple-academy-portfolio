@@ -54,7 +54,7 @@ function App() {
         <PortfolioIntroLoader onComplete={completeIntro} onSkip={skipIntro} />
       )}
 
-      <div className={showIntro ? 'hidden' : undefined} aria-hidden={showIntro}>
+      <div className={`relative min-h-screen overflow-x-hidden ${showIntro ? 'hidden' : ''}`} aria-hidden={showIntro}>
         {/* Custom cursor (desktop only) */}
         <CustomCursor />
 

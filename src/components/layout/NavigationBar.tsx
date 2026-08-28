@@ -96,32 +96,41 @@ export function NavigationBar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu overlay */}
       {isMobileMenuOpen && (
-        <div
-          id="mobile-menu"
-          className="md:hidden border-t border-[var(--color-border)] bg-[var(--color-background)]/95 backdrop-blur-md"
-        >
-          <ul className="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1" role="list">
-            {NAV_ITEMS.map((item) => (
-              <li key={item.id}>
-                <button
-                  type="button"
-                  onClick={() => handleNavClick(item.id)}
-                  className={`w-full text-left px-4 py-2.5 rounded-lg text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] ${
-                    activeSection === item.id
-                      ? 'text-[var(--color-primary)] bg-[var(--color-primary)]/10'
-                      : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface)]'
-                  }`}
-                  aria-current={activeSection === item.id ? 'page' : undefined}
-                >
-                  {item.label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <div 
+          className="fixed inset-0 top-16 z-30 bg-black/50 md:hidden" 
+          onClick={() => setIsMobileMenuOpen(false)}
+          aria-hidden="true"
+        />
       )}
+
+      {/* Mobile menu sidebar */}
+      <div
+        id="mobile-menu"
+        className={`fixed top-16 right-0 bottom-0 w-64 z-40 bg-[var(--color-background)]/95 backdrop-blur-md border-l border-[var(--color-border)] transform transition-transform duration-300 ease-in-out md:hidden ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <ul className="px-4 py-6 flex flex-col gap-2" role="list">
+          {NAV_ITEMS.map((item) => (
+            <li key={item.id}>
+              <button
+                type="button"
+                onClick={() => handleNavClick(item.id)}
+                className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] ${
+                  activeSection === item.id
+                    ? 'text-[var(--color-primary)] bg-[var(--color-primary)]/10'
+                    : 'text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:bg-[var(--color-surface)]'
+                }`}
+                aria-current={activeSection === item.id ? 'page' : undefined}
+              >
+                {item.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 }

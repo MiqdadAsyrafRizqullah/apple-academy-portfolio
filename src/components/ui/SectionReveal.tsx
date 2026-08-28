@@ -40,8 +40,8 @@ function getVariantStates(variant: RevealVariant) {
 
     case 'fan-left':
       return {
-        hidden: { opacity: 0, x: 140, rotate: 3, filter: 'blur(12px)' },
-        visible: { opacity: 1, x: 0, rotate: 0, filter: 'blur(0px)' },
+        hidden: { opacity: 0, y: 100, rotate: 6, filter: 'blur(12px)' },
+        visible: { opacity: 1, y: 0, rotate: 0, filter: 'blur(0px)' },
         duration: 1.2,
       };
 

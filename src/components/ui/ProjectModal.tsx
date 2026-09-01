@@ -83,7 +83,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   type="button"
                 onClick={handleClose}
                 className="absolute top-3 right-3 z-20 p-2 rounded-full bg-black/50 backdrop-blur-sm text-white hover:bg-black/70 transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-white/50"
-                  aria-label="Tutup modal"
+                  aria-label="Close modal"
                 >
                   <X size={18} aria-hidden="true" />
                 </button>
@@ -135,7 +135,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                         {project.role && (
                           <p className="text-sm font-medium text-[var(--color-text-secondary)] mt-1.5 mb-2 flex items-center gap-1.5">
                             <span className="w-1.5 h-1.5 rounded-full bg-[var(--color-primary)]" />
-                            Peran: {project.role}
+                            Role: {project.role}
                           </p>
                         )}
                       </div>
@@ -173,7 +173,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     </p>
 
                     <div className="mb-5">
-                      <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">Teknologi</h3>
+                      <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">Technologies</h3>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech) => (
                           <span
@@ -188,12 +188,12 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       <div className="p-4 rounded-lg bg-[var(--color-background)] border border-[var(--color-border)]">
-                        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">Tantangan</h3>
-                        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{project.challenges}</p>
+                        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">Impact</h3>
+                        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{project.impact}</p>
                       </div>
                       <div className="p-4 rounded-lg bg-[var(--color-background)] border border-[var(--color-border)]">
-                        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">Solusi</h3>
-                        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{project.solutions}</p>
+                        <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-2">What I Learned</h3>
+                        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{project.learnings}</p>
                       </div>
                     </div>
                   </div>

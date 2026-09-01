@@ -8,7 +8,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg',
     proficiency: 95,
     category: 'UI/UX Design',
-    tooltip: 'Desain antarmuka, prototipe interaktif, dan kolaborasi tim secara real-time.',
+    tooltip: 'User interface design, interactive prototyping, and real-time team collaboration.',
   },
   {
     id: 'skill-adobe-xd',
@@ -16,7 +16,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg',
     proficiency: 85,
     category: 'UI/UX Design',
-    tooltip: 'Alat bantu desain antarmuka dan pengalaman pengguna (UX) untuk web dan aplikasi seluler.',
+    tooltip: 'Interface and user experience (UX) design tool for web and mobile applications.',
   },
   {
     id: 'skill-sketch',
@@ -24,7 +24,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sketch/sketch-original.svg',
     proficiency: 80,
     category: 'UI/UX Design',
-    tooltip: 'Editor grafis vektor untuk antarmuka pengguna digital dengan ekosistem plugin yang kuat.',
+    tooltip: 'Vector graphics editor for digital user interfaces with a robust plugin ecosystem.',
   },
 
   // Web Development
@@ -34,7 +34,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg',
     proficiency: 95,
     category: 'Web Development',
-    tooltip: 'Struktur dasar halaman web.',
+    tooltip: 'Fundamental structure of web pages.',
   },
   {
     id: 'skill-css',
@@ -42,7 +42,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg',
     proficiency: 90,
     category: 'Web Development',
-    tooltip: 'Styling dan layout halaman web.',
+    tooltip: 'Styling and layout of web pages.',
   },
   {
     id: 'skill-js',
@@ -50,7 +50,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg',
     proficiency: 90,
     category: 'Web Development',
-    tooltip: 'Bahasa pemrograman utama untuk interaktivitas web.',
+    tooltip: 'Core programming language for web interactivity.',
   },
   {
     id: 'skill-ts',
@@ -58,7 +58,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg',
     proficiency: 85,
     category: 'Web Development',
-    tooltip: 'Superset JavaScript dengan type safety untuk kode yang lebih andal.',
+    tooltip: 'JavaScript superset with type safety for more reliable code.',
   },
   {
     id: 'skill-react',
@@ -66,7 +66,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     proficiency: 90,
     category: 'Web Development',
-    tooltip: 'Library JavaScript populer untuk membangun antarmuka pengguna.',
+    tooltip: 'Popular JavaScript library for building user interfaces.',
   },
   {
     id: 'skill-nextjs',
@@ -74,7 +74,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
     proficiency: 85,
     category: 'Web Development',
-    tooltip: 'Framework React untuk SSR, SSG, dan aplikasi full-stack.',
+    tooltip: 'React framework for SSR, SSG, and full-stack applications.',
   },
   {
     id: 'skill-vue',
@@ -82,7 +82,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg',
     proficiency: 80,
     category: 'Web Development',
-    tooltip: 'Framework JavaScript progresif dan fleksibel untuk UI.',
+    tooltip: 'Progressive and flexible JavaScript framework for UI.',
   },
   {
     id: 'skill-tailwind',
@@ -90,7 +90,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg',
     proficiency: 95,
     category: 'Web Development',
-    tooltip: 'Framework CSS utility-first untuk desain cepat dan modern.',
+    tooltip: 'Utility-first CSS framework for rapid and modern design.',
   },
   {
     id: 'skill-nodejs',
@@ -98,7 +98,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg',
     proficiency: 80,
     category: 'Web Development',
-    tooltip: 'Runtime JavaScript sisi server untuk membangun backend.',
+    tooltip: 'Server-side JavaScript runtime for building backend architectures.',
   },
 
   // Mobile/App Development
@@ -108,7 +108,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg',
     proficiency: 85,
     category: 'Mobile Development',
-    tooltip: 'Bahasa pemrograman utama untuk membangun aplikasi Flutter.',
+    tooltip: 'Primary programming language for building Flutter applications.',
   },
   {
     id: 'skill-flutter',
@@ -116,7 +116,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg',
     proficiency: 85,
     category: 'Mobile Development',
-    tooltip: 'SDK populer untuk membangun aplikasi cross-platform mobile.',
+    tooltip: 'Popular SDK for building cross-platform mobile applications.',
   },
   {
     id: 'skill-react-native',
@@ -124,7 +124,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg',
     proficiency: 80,
     category: 'Mobile Development',
-    tooltip: 'Framework untuk membangun aplikasi mobile native dengan JavaScript dan React.',
+    tooltip: 'Framework for building native mobile apps using JavaScript and React.',
   },
   {
     id: 'skill-java',
@@ -132,7 +132,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg',
     proficiency: 75,
     category: 'Mobile Development',
-    tooltip: 'Bahasa tangguh berorientasi objek untuk pengembangan aplikasi Android.',
+    tooltip: 'Robust object-oriented language for Android app development.',
   },
   {
     id: 'skill-swift',
@@ -140,7 +140,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg',
     proficiency: 80,
     category: 'Mobile Development',
-    tooltip: 'Bahasa pemrograman utama untuk pengembangan aplikasi iOS.',
+    tooltip: 'Primary programming language for iOS app development.',
   },
   {
     id: 'skill-cpp',
@@ -148,7 +148,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg',
     proficiency: 70,
     category: 'Mobile Development',
-    tooltip: 'Bahasa pemrograman level sistem berkinerja tinggi.',
+    tooltip: 'High-performance systems-level programming language.',
   },
 
   // Artificial Intelligence
@@ -158,7 +158,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     proficiency: 85,
     category: 'Artificial Intelligence',
-    tooltip: 'Bahasa pemrograman serbaguna, sangat handal untuk AI dan Data Science.',
+    tooltip: 'Versatile programming language, highly reliable for AI and Data Science.',
   },
   {
     id: 'skill-tensorflow',
@@ -166,7 +166,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg',
     proficiency: 75,
     category: 'Artificial Intelligence',
-    tooltip: 'Library open-source populer untuk mengembangkan model machine learning dan deep learning.',
+    tooltip: 'Popular open-source library for developing machine learning and deep learning models.',
   },
   {
     id: 'skill-ml',
@@ -174,7 +174,7 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
     proficiency: 80,
     category: 'Artificial Intelligence',
-    tooltip: 'Penerapan algoritma prediktif, analisis data tingkat lanjut, dan pengenalan pola.',
+    tooltip: 'Implementation of predictive algorithms, advanced data analysis, and pattern recognition.',
   },
   {
     id: 'skill-ai',
@@ -182,6 +182,6 @@ export const skills: Skill[] = [
     icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg',
     proficiency: 80,
     category: 'Artificial Intelligence',
-    tooltip: 'Integrasi chatbot cerdas, API kecerdasan buatan, dan NLP terapan.',
+    tooltip: 'Integration of intelligent chatbots, AI APIs, and applied NLP.',
   },
 ];

@@ -3,8 +3,8 @@ import { PersonalInfo } from '../types';
 export const personalInfo: PersonalInfo = {
   name: 'Miqdad Asyraf Rizqullah',
   titles: ['UI/UX Designer', 'Web Developer', 'App Developer', 'AI Enthusiast'],
-  tagline: 'Membangun pengalaman digital yang bermakna',
-  bio: 'Saya adalah seorang mahasiswa Teknik Informatika di Universitas Halu Oleo yang memiliki minat tinggi di bidang UI/UX Design, Web Development, dan Artificial Intelligence. Saya selalu bersemangat mempelajari teknologi baru dan merancang solusi digital yang tidak hanya fungsional, tetapi juga memberikan pengalaman yang menyenangkan bagi penggunanya.',
+  tagline: 'Crafting meaningful digital experiences',
+  bio: 'I am an Informatics Engineering student at Halu Oleo University with a deep passion for UI/UX Design, Web Development, and Artificial Intelligence. I am highly driven to learn new technologies and design digital solutions that are not only functional but also provide a delightful user experience.',
   profileImage: '/assets/images/profile.jpg',
   cvUrl: '/assets/cv/miqdad-cv.pdf',
   email: 'miqdadwajo@gmail.com',

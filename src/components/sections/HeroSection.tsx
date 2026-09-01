@@ -137,7 +137,7 @@ export function HeroSection() {
             className="px-8 py-3 rounded-full bg-[var(--color-primary)] text-white font-semibold text-base hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 min-w-[160px]"
             aria-label="Lihat portofolio saya"
           >
-            Lihat Portofolio
+            View Portfolio
           </button>
           <button
             type="button"
@@ -153,10 +153,10 @@ export function HeroSection() {
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-8 py-3 rounded-full border-2 border-[var(--color-border)] text-[var(--color-text-secondary)] font-semibold text-base hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2 min-w-[160px]"
-            aria-label="Unduh CV saya"
+            aria-label="Download CV saya"
           >
             <Download size={16} aria-hidden="true" />
-            Unduh CV
+            Download CV
           </a>
         </motion.div>
 

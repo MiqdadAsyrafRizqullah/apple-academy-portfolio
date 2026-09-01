@@ -91,7 +91,7 @@ export function ContactSection() {
           >
             <div>
               <h3 className="text-xl font-semibold text-[var(--color-text-primary)] mb-4">
-                Informasi Kontak
+                Contact Information
               </h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6">
                 Saya terbuka untuk peluang freelance, kolaborasi proyek, atau diskusi tentang teknologi. Kirimkan pesan melalui formulir atau hubungi langsung via email.

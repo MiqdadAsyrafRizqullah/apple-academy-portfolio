@@ -21,7 +21,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-miqdad-1',
-    name: 'Peserta Talkshow SkillFest 2025',
+    name: 'Talkshow Participant SkillFest 2025',
     issuer: 'Digisaurus.id',
     year: 2025,
     image: '/assets/images/certificates/cert-miqdad-1.png',
@@ -30,7 +30,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-miqdad-2',
-    name: 'Peserta Talkshow elevAIte Indonesia',
+    name: 'Talkshow Participant elevAIte Indonesia',
     issuer: 'Digisaurus.id',
     year: 2025,
     image: '/assets/images/certificates/cert-miqdad-2.png',
@@ -39,7 +39,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-course-653',
-    name: 'Belajar Dasar AI',
+    name: 'Learn the Basics of AI',
     issuer: 'Dicoding Indonesia',
     year: 2025,
     image: '/assets/images/certificates/cert-course-653.png',
@@ -48,7 +48,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-course-753',
-    name: 'Prompt Engineering untuk Software Developer',
+    name: 'Prompt Engineering for Software Developers',
     issuer: 'Dicoding Indonesia',
     year: 2026,
     image: '/assets/images/certificates/cert-course-753.png',
@@ -57,7 +57,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-course-902',
-    name: 'Belajar Penerapan Data Science dengan Microsoft Fabric',
+    name: 'Learning Data Science Implementation with Microsoft Fabric',
     issuer: 'Dicoding Indonesia',
     year: 2026,
     image: '/assets/images/certificates/cert-course-902.png',
@@ -75,7 +75,7 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-tambahan-1',
-    name: 'Peserta Webinar: Think Before You Click (Cyber Security)',
+    name: 'Webinar Participant: Think Before You Click (Cyber Security)',
     issuer: 'Universitas Halu Oleo',
     year: 2026,
     image: '/assets/images/certificates/cert-tambahan-1.png',

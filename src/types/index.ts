@@ -26,8 +26,8 @@ export interface Project {
   projectUrl?: string;
   /** URL repositori (opsional) */
   repoUrl?: string;
-  challenges: string;
-  solutions: string;
+  impact: string;
+  learnings: string;
   /** Status Tim: Individual Project atau Group Project */
   teamStatus?: string;
   /** Peran spesifik dalam proyek */
@@ -91,12 +91,12 @@ export interface NavItem {
 
 /** Daftar item navigasi yang terdefinisi */
 export const NAV_ITEMS: NavItem[] = [
-  { id: 'hero', label: 'Beranda' },
-  { id: 'about', label: 'Tentang' },
-  { id: 'skills', label: 'Keahlian' },
-  { id: 'portfolio', label: 'Portofolio' },
-  { id: 'certificates', label: 'Sertifikat' },
-  { id: 'contact', label: 'Kontak' },
+  { id: 'hero', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'portfolio', label: 'Portfolio' },
+  { id: 'certificates', label: 'Certificates' },
+  { id: 'contact', label: 'Contact' },
 ];
 
 // ------------------------------------------------------------

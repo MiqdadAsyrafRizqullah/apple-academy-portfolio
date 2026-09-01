@@ -59,7 +59,7 @@ export function AboutSection() {
         {/* Section header */}
         <motion.div className="text-center mb-16" {...fadeInUp}>
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] mb-4">
-            Tentang Saya
+            About Me
           </h2>
           <div className="w-16 h-1 bg-[var(--color-primary)] mx-auto rounded-full" aria-hidden="true" />
         </motion.div>

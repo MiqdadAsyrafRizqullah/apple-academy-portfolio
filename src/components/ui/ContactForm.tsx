@@ -67,7 +67,7 @@ export function ContactForm() {
       <div className="flex flex-col items-center justify-center py-12 text-center">
         <CheckCircle size={48} className="text-green-500 mb-4" aria-hidden="true" />
         <h3 className="text-lg font-semibold text-[var(--color-text-primary)] mb-2">
-          Pesan Terkirim!
+          Message Terkirim!
         </h3>
         <p className="text-[var(--color-text-secondary)] mb-6">
           Terima kasih telah menghubungi saya. Saya akan membalas secepatnya.
@@ -77,7 +77,7 @@ export function ContactForm() {
           onClick={() => setSubmitStatus('idle')}
           className="px-4 py-2 rounded-lg bg-[var(--color-primary)] text-white text-sm hover:opacity-90 transition-opacity"
         >
-          Kirim Pesan Lain
+          Kirim Message Lain
         </button>
       </div>
     );
@@ -157,7 +157,7 @@ export function ContactForm() {
       {/* Subject */}
       <div className="mb-4">
         <label htmlFor="subject" className="block text-sm font-medium text-[var(--color-text-primary)] mb-1.5">
-          Subjek <span aria-hidden="true" className="text-red-400">*</span>
+          Subject <span aria-hidden="true" className="text-red-400">*</span>
         </label>
         <input
           id="subject"
@@ -183,7 +183,7 @@ export function ContactForm() {
       {/* Message */}
       <div className="mb-6">
         <label htmlFor="message" className="block text-sm font-medium text-[var(--color-text-primary)] mb-1.5">
-          Pesan <span aria-hidden="true" className="text-red-400">*</span>
+          Message <span aria-hidden="true" className="text-red-400">*</span>
         </label>
         <textarea
           id="message"
@@ -221,7 +221,7 @@ export function ContactForm() {
         ) : (
           <>
             <Send size={18} aria-hidden="true" />
-            Kirim Pesan
+            Kirim Message
           </>
         )}
       </button>

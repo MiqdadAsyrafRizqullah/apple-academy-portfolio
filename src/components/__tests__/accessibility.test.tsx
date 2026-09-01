@@ -51,8 +51,8 @@ const arbitraryProject = (): fc.Arbitrary<Project> =>
     technologies: fc.array(visibleString(1, 30), { minLength: 1, maxLength: 5 }),
     projectUrl: fc.option(fc.webUrl(), { nil: undefined }),
     repoUrl: fc.option(fc.webUrl(), { nil: undefined }),
-    challenges: visibleString(1, 200),
-    solutions: visibleString(1, 200),
+    impact: visibleString(1, 200),
+    learnings: visibleString(1, 200),
     featured: fc.boolean(),
   });
 

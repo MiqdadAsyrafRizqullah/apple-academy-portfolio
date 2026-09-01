@@ -53,7 +53,7 @@ export function AboutSection() {
       id="about"
       ref={sectionRef}
       className="py-20 lg:py-32 bg-[var(--color-background)]"
-      aria-label="Tentang saya"
+      aria-label="About me"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -77,7 +77,7 @@ export function AboutSection() {
             <div className="relative">
               <img
                 src={personalInfo.profileImage}
-                alt={`Foto profil ${personalInfo.name}`}
+                alt={`Profile photo ${personalInfo.name}`}
                 className="w-64 h-64 sm:w-80 sm:h-80 rounded-2xl object-cover shadow-2xl"
                 loading="lazy"
                 onError={(e) => {
@@ -102,7 +102,7 @@ export function AboutSection() {
           >
             <motion.div {...fadeInUp}>
               <h3 className="text-xl font-semibold text-[var(--color-text-primary)] mb-3">
-                Halo, saya {personalInfo.name} 👋
+                Hello, I am {personalInfo.name} 👋
               </h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed">
                 {personalInfo.bio}
@@ -146,10 +146,10 @@ export function AboutSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[var(--color-primary)] text-white font-semibold hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] focus-visible:ring-offset-2"
-                aria-label="Unduh CV saya"
+                aria-label="Download my CV"
               >
                 <Download size={16} aria-hidden="true" />
-                Unduh CV
+                Download CV
               </a>
             </motion.div>
           </motion.div>
@@ -158,9 +158,9 @@ export function AboutSection() {
         {/* Stats */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           {[
-            { target: personalInfo.stats.projectsCompleted, label: 'Proyek Portofolio', suffix: '', delay: 0 },
-            { target: personalInfo.stats.yearsExperience, label: 'Sertifikat & Kursus', suffix: '', delay: 0.15 },
-            { target: personalInfo.stats.clients, label: 'Bidang Keahlian', suffix: '', delay: 0.3 },
+            { target: personalInfo.stats.projectsCompleted, label: 'Portfolio Projects', suffix: '', delay: 0 },
+            { target: personalInfo.stats.yearsExperience, label: 'Certificates & Courses', suffix: '', delay: 0.15 },
+            { target: personalInfo.stats.clients, label: 'Areas of Expertise', suffix: '', delay: 0.3 },
           ].map(({ target, label, suffix, delay }) => (
             <motion.div
               key={label}
@@ -186,10 +186,10 @@ export function AboutSection() {
           transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
         >
           <h3 className="text-lg font-semibold text-[var(--color-text-primary)] mb-1 text-center">
-            Minat & Hobi
+            Interests & Hobbies
           </h3>
           <p className="text-sm text-[var(--color-text-secondary)] text-center mb-6">
-            Hal-hal yang saya sukai di luar coding
+            Things I enjoy outside of coding
           </p>
 
           {/* Row 1 — scrolls left */}

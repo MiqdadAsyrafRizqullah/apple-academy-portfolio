@@ -62,10 +62,10 @@ export function ContactSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] mb-4">
-            Hubungi Saya
+            Contact Me
           </h2>
           <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto">
-            Tertarik untuk berkolaborasi? Jangan ragu untuk menghubungi saya.
+            Interested in collaborating? Feel free to reach out to me.
           </p>
           <div className="w-16 h-1 bg-[var(--color-primary)] mx-auto rounded-full mt-4" aria-hidden="true" />
         </motion.div>
@@ -94,7 +94,7 @@ export function ContactSection() {
                 Contact Information
               </h3>
               <p className="text-[var(--color-text-secondary)] leading-relaxed mb-6">
-                Saya terbuka untuk peluang freelance, kolaborasi proyek, atau diskusi tentang teknologi. Kirimkan pesan melalui formulir atau hubungi langsung via email.
+                I am open to freelance opportunities, project collaborations, or discussing technology. Send a message via the form or contact me directly via email.
               </p>
 
               {/* Email */}
@@ -118,7 +118,7 @@ export function ContactSection() {
             {/* Social links */}
             <div>
               <h3 className="text-lg font-semibold text-[var(--color-text-primary)] mb-4">
-                Media Sosial
+                Social Media
               </h3>
               <div className="flex flex-col gap-3">
                 {links.map(({ href, icon: Icon, label }) => (

@@ -46,7 +46,7 @@ export function Footer() {
           {/* Nav links */}
           <div>
             <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-3 uppercase tracking-wider">
-              Navigasi
+              Navigation
             </h3>
             <nav aria-label="Footer navigation">
               <ul className="space-y-2">
@@ -68,7 +68,7 @@ export function Footer() {
           {/* Social links */}
           <div>
             <h3 className="text-sm font-semibold text-[var(--color-text-primary)] mb-3 uppercase tracking-wider">
-              Sosial Media
+              Social Media
             </h3>
             <div className="flex gap-3">
               {socialLinks.map(({ href, icon: Icon, label }) => (
@@ -78,7 +78,7 @@ export function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg bg-[var(--color-background)] border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-primary)] hover:border-[var(--color-primary)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)]"
-                  aria-label={`Kunjungi profil ${label} saya`}
+                  aria-label={`Visit my ${label} profile`}
                 >
                   <Icon size={18} aria-hidden="true" />
                 </a>
@@ -90,10 +90,10 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 border-t border-[var(--color-border)] flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-sm text-[var(--color-text-secondary)]">
-            © {currentYear} {personalInfo.name}. Semua hak dilindungi.
+            © {currentYear} {personalInfo.name}. All rights reserved.
           </p>
           <p className="text-sm text-[var(--color-text-secondary)] flex items-center gap-1">
-            Dibuat dengan <Heart size={14} className="text-red-400" aria-hidden="true" /> menggunakan React + TypeScript
+            Crafted with <Heart size={14} className="text-red-400" aria-hidden="true" /> using React + TypeScript
           </p>
         </div>
       </div>

@@ -77,7 +77,7 @@ export function ContactForm() {
           onClick={() => setSubmitStatus('idle')}
           className="px-4 py-2 rounded-lg bg-[var(--color-primary)] text-white text-sm hover:opacity-90 transition-opacity"
         >
-          Kirim Message Lain
+          Send Another Message
         </button>
       </div>
     );
@@ -102,7 +102,7 @@ export function ContactForm() {
         {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-[var(--color-text-primary)] mb-1.5">
-            Nama <span aria-hidden="true" className="text-red-400">*</span>
+            Name <span aria-hidden="true" className="text-red-400">*</span>
           </label>
           <input
             id="name"
@@ -117,7 +117,7 @@ export function ContactForm() {
             className={`w-full px-4 py-2.5 rounded-lg bg-[var(--color-background)] border text-[var(--color-text-primary)] text-sm placeholder:text-[var(--color-text-secondary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] transition-colors ${
               errors.name ? 'border-red-500' : 'border-[var(--color-border)]'
             }`}
-            placeholder="Nama lengkap Anda"
+            placeholder="Your full name"
           />
           {errors.name && (
             <p id="name-error" role="alert" className="mt-1 text-xs text-red-400">
@@ -144,7 +144,7 @@ export function ContactForm() {
             className={`w-full px-4 py-2.5 rounded-lg bg-[var(--color-background)] border text-[var(--color-text-primary)] text-sm placeholder:text-[var(--color-text-secondary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] transition-colors ${
               errors.email ? 'border-red-500' : 'border-[var(--color-border)]'
             }`}
-            placeholder="email@contoh.com"
+            placeholder="email@example.com"
           />
           {errors.email && (
             <p id="email-error" role="alert" className="mt-1 text-xs text-red-400">
@@ -171,7 +171,7 @@ export function ContactForm() {
           className={`w-full px-4 py-2.5 rounded-lg bg-[var(--color-background)] border text-[var(--color-text-primary)] text-sm placeholder:text-[var(--color-text-secondary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] transition-colors ${
             errors.subject ? 'border-red-500' : 'border-[var(--color-border)]'
           }`}
-          placeholder="Topik pesan Anda"
+          placeholder="Message subject"
         />
         {errors.subject && (
           <p id="subject-error" role="alert" className="mt-1 text-xs text-red-400">
@@ -197,7 +197,7 @@ export function ContactForm() {
           className={`w-full px-4 py-2.5 rounded-lg bg-[var(--color-background)] border text-[var(--color-text-primary)] text-sm placeholder:text-[var(--color-text-secondary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-primary)] transition-colors resize-none ${
             errors.message ? 'border-red-500' : 'border-[var(--color-border)]'
           }`}
-          placeholder="Tuliskan pesan Anda di sini..."
+          placeholder="Write your message here..."
         />
         {errors.message && (
           <p id="message-error" role="alert" className="mt-1 text-xs text-red-400">
@@ -221,7 +221,7 @@ export function ContactForm() {
         ) : (
           <>
             <Send size={18} aria-hidden="true" />
-            Kirim Message
+            Send Message
           </>
         )}
       </button>

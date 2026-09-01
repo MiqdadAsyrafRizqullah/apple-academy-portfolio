@@ -13,7 +13,7 @@ const PLACEHOLDER_IMAGE = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWl
 
 /**
  * Project card with hover overlay and lazy-loaded thumbnail.
- * Clicking the card or "Lihat Detail" button opens the project modal.
+ * Clicking the card or "View Details" button opens the project modal.
  */
 export function ProjectCard({ project, onOpenModal }: ProjectCardProps) {
   const [imgError, setImgError] = useState(false);
@@ -33,7 +33,7 @@ export function ProjectCard({ project, onOpenModal }: ProjectCardProps) {
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onOpenModal(project); }}
       tabIndex={0}
       role="button"
-      aria-label={`Lihat detail proyek: ${project.title}`}
+      aria-label={`View details proyek: ${project.title}`}
     >
       {/* Thumbnail */}
       <div className="relative shrink-0 aspect-video overflow-hidden bg-gray-800">
@@ -62,10 +62,10 @@ export function ProjectCard({ project, onOpenModal }: ProjectCardProps) {
             type="button"
             onClick={(e) => { e.stopPropagation(); onOpenModal(project); }}
             className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[var(--color-primary)] text-white text-sm font-medium hover:opacity-90 transition-opacity focus:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            aria-label={`Lihat detail ${project.title}`}
+            aria-label={`View details ${project.title}`}
           >
             <Eye size={14} aria-hidden="true" />
-            Lihat Detail
+            View Details
           </button>
 
           {project.projectUrl && (

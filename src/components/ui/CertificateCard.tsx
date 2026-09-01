@@ -56,7 +56,7 @@ export function CertificateCard({ certificate, onOpenLightbox }: CertificateCard
         <div className="absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
           <span className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-[var(--color-primary)] text-white text-sm font-medium pointer-events-none">
             <Eye size={14} aria-hidden="true" />
-            Lihat Detail
+            View Details
           </span>
         </div>
       </div>
@@ -82,7 +82,7 @@ export function CertificateCard({ certificate, onOpenLightbox }: CertificateCard
           aria-label={`Lihat detail ${certificate.name}`}
         >
           <Eye size={14} aria-hidden="true" />
-          Lihat Detail
+          View Details
         </button>
 
         {certificate.verificationUrl && (

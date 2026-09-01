@@ -371,7 +371,7 @@ export function CertificateSection() {
       ref={sectionRef}
       id="certificates"
       className="certificate-section relative overflow-hidden bg-[var(--color-surface)] py-20 lg:py-32"
-      aria-label="Sertifikat"
+      aria-label="Certificates"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -395,10 +395,10 @@ export function CertificateSection() {
             Sertifikat
           </h2>
           <p className="mx-auto mb-2 max-w-xl text-[var(--color-text-secondary)]">
-            Sertifikasi profesional yang telah saya raih
+            Professional certifications I have achieved
           </p>
           <p className="text-sm font-medium text-[var(--color-primary)]">
-            Total: {certificates.length} sertifikat
+            Total: {certificates.length} certificates
           </p>
           <div
             className="mx-auto mt-4 h-1 w-16 rounded-full bg-[var(--color-primary)]"
@@ -435,7 +435,7 @@ export function CertificateSection() {
               1024: { slidesPerView: 3 },
             }}
             className="certificate-swiper pb-12"
-            aria-label="Carousel sertifikat"
+            aria-label="Carousel certificates"
           >
             {certificates.map((cert) => (
               <SwiperSlide key={cert.id} className="!h-auto">

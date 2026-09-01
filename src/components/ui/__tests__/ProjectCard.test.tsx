@@ -70,7 +70,7 @@ vi.mock('lucide-react', () => {
 // ---------------------------------------------------------------------------
 // Arbitraries
 // ---------------------------------------------------------------------------
-const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'Aplikasi', 'AI'];
+const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'App', 'AI'];
 
 /**
  * String with at least one non-whitespace character and no leading/trailing

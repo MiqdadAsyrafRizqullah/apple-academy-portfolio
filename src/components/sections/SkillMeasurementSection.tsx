@@ -87,7 +87,7 @@ export function SkillMeasurementSection() {
     <section
       id="skill-measurement"
       className="relative py-20 bg-[var(--color-background)] border-t border-[var(--color-border)]"
-      aria-label="Pengukuran Keahlian"
+      aria-label="Skill Measurement"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -98,7 +98,7 @@ export function SkillMeasurementSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] mb-4">
-            Pengukuran Keahlian
+            Skill Measurement
           </h2>
           <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto">
             Tingkat kemahiran pada setiap alat dan teknologi

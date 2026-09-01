@@ -6,7 +6,7 @@ import * as fc from 'fast-check';
 import { projects } from '../projects';
 import type { Project, ProjectCategory } from '../../types';
 
-const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'Aplikasi', 'AI'];
+const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'App', 'AI'];
 
 /**
  * Filter function that mirrors what PortfolioSection will use.

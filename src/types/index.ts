@@ -6,7 +6,7 @@
 // Project Types
 // ------------------------------------------------------------
 
-export type ProjectCategory = 'Web' | 'UI/UX' | 'Aplikasi' | 'AI';
+export type ProjectCategory = 'Web' | 'UI/UX' | 'App' | 'AI';
 
 export interface Project {
   id: string;

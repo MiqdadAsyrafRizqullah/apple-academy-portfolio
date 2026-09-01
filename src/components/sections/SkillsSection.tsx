@@ -33,7 +33,7 @@ export function SkillsSection() {
     <section
       id="skills"
       className="relative py-20 lg:py-32 bg-[var(--color-surface)]"
-      aria-label="Keahlian"
+      aria-label="Skills"
     >
       {/* 3D Perspective Moving Grid Background */}
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -56,10 +56,10 @@ export function SkillsSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] mb-4">
-            Keahlian
+            Skills
           </h2>
           <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto">
-            Teknologi dan tools yang saya kuasai dalam berbagai bidang
+            Technologies and tools I have mastered across various fields
           </p>
           <div className="w-16 h-1 bg-[var(--color-primary)] mx-auto rounded-full mt-4" aria-hidden="true" />
         </motion.div>

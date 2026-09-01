@@ -7,9 +7,9 @@ import { projects } from '../../data/projects';
 import type { Project, ProjectCategory } from '../../types';
 import { lockPageScroll } from '../../utils/scrollLock';
 
-type FilterCategory = ProjectCategory | 'Semua';
+type FilterCategory = ProjectCategory | 'All';
 
-const FILTER_CATEGORIES: FilterCategory[] = ['Semua', 'Web', 'UI/UX', 'Aplikasi', 'AI'];
+const FILTER_CATEGORIES: FilterCategory[] = ['All', 'Web', 'UI/UX', 'App', 'AI'];
 
 /**
  * Portfolio / Projects Section
@@ -18,7 +18,7 @@ const FILTER_CATEGORIES: FilterCategory[] = ['Semua', 'Web', 'UI/UX', 'Aplikasi'
  * - ProjectModal with AnimatePresence
  */
 export function PortfolioSection() {
-  const [activeFilter, setActiveFilter] = useState<FilterCategory>('Semua');
+  const [activeFilter, setActiveFilter] = useState<FilterCategory>('All');
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const openProjectModal = (project: Project) => {
@@ -27,7 +27,7 @@ export function PortfolioSection() {
   };
 
   const filteredProjects =
-    activeFilter === 'Semua'
+    activeFilter === 'All'
       ? projects
       : projects.filter(p => p.category === activeFilter);
 
@@ -35,7 +35,7 @@ export function PortfolioSection() {
     <section
       id="portfolio"
       className="py-20 lg:py-32 bg-[var(--color-background)]"
-      aria-label="Portofolio"
+      aria-label="Portfolio"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section header */}
@@ -47,10 +47,10 @@ export function PortfolioSection() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-[var(--color-text-primary)] mb-4">
-            Portofolio
+            Portfolio
           </h2>
           <p className="text-[var(--color-text-secondary)] max-w-xl mx-auto">
-            Proyek-proyek yang telah saya kerjakan
+            Projects I have worked on
           </p>
           <div className="w-16 h-1 bg-[var(--color-primary)] mx-auto rounded-full mt-4" aria-hidden="true" />
         </motion.div>
@@ -72,7 +72,7 @@ export function PortfolioSection() {
               className="w-full appearance-none bg-[var(--color-surface)] border border-[var(--color-border)] text-[var(--color-text-primary)] py-3 px-4 pr-10 rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] font-medium"
             >
               {FILTER_CATEGORIES.map(category => (
-                <option key={category} value={category}>{category === 'Semua' ? 'Semua Kategori' : category}</option>
+                <option key={category} value={category}>{category === 'All' ? 'Semua Kategori' : category}</option>
               ))}
             </select>
             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-[var(--color-text-secondary)]">

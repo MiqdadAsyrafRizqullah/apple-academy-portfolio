@@ -34,7 +34,7 @@ vi.mock('lucide-react', () => {
   return { ExternalLink: Icon, Github: Icon, Eye: Icon, Award: Icon };
 });
 
-const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'Aplikasi', 'AI'];
+const VALID_CATEGORIES: ProjectCategory[] = ['Web', 'UI/UX', 'App', 'AI'];
 
 const visibleString = (min = 1, max = 100) =>
   fc.string({ minLength: min, maxLength: max }).filter(s => s.trim() === s && s.trim().length > 0);
